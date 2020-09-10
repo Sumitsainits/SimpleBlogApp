@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../reducers';
 import { useForm } from 'react-hook-form';
 import allActions from '../../actions';
+import {thingsInArray} from '../App';
 
 type Inputs = {
     title: string,
@@ -13,14 +14,14 @@ type Inputs = {
 };
 
 
-interface thingsInArray {
-    id: number,
-    emailid: string,
-    name: string,
-    title: string,
-    posttext: string,
-    timeofpost: string
-}
+// interface thingsInArray {
+//     id: number,
+//     emailid: string,
+//     name: string,
+//     title: string,
+//     posttext: string,
+//     timeofpost: string
+// }
 
 type Props = {
     listToPrint: thingsInArray[] | undefined,

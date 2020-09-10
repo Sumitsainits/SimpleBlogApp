@@ -2,14 +2,7 @@ import React, { MouseEvent } from 'react';
 import styled from 'styled-components';
 import deletePost from '../../public/image/deletePost.png'
 
-interface thingsInArray {
-    id: number,
-    emailid: string,
-    name: string,
-    title: string,
-    posttext: string,
-    timeofpost: string
-}
+import {thingsInArray} from '../App';
 
 type Props = {
     cardDetails: thingsInArray,

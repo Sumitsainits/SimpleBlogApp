@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import Header from './nav_header';
 import Footer from './footer';
-
+import myFont from '../public/fonts/Roboto-Regular.ttf'
 import { createGlobalStyle } from 'styled-components';
 import allActions from '../actions';
 
-interface thingsInArray {
+export interface thingsInArray {
   id: number,
   emailid: string,
   name: string,
@@ -16,6 +16,14 @@ interface thingsInArray {
 }
 
 const GlobalStyle = createGlobalStyle`
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(${myFont}) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
   #root {
     margin:0px;
     padding:0px;
@@ -24,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
   html ,body{
     margin:0px;
     padding:0px;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     background: #e2e1e0;
     position : relative;     
     overflow-x: hidden;   

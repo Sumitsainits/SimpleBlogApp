@@ -2,14 +2,16 @@ import React from 'react';
 import BlogCard from './blogCard';
 import styled from 'styled-components';
 
-interface thingsInArray {
-    id:number,
-    emailid: string,
-    name: string,
-    title: string,
-    posttext: string,
-    timeofpost: string
-  }
+import {thingsInArray} from '../App';
+
+// interface thingsInArray {
+//     id:number,
+//     emailid: string,
+//     name: string,
+//     title: string,
+//     posttext: string,
+//     timeofpost: string
+//   }
 
 type Props = {
     listToPrint:thingsInArray[]|undefined

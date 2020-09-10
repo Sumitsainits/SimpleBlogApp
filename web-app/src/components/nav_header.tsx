@@ -7,14 +7,7 @@ import CardContainer from './BlogContainer/blogCardContainer';
 import { useSelector } from 'react-redux';
 import { RootState } from '../reducers';
 
-interface thingsInArray {
-    id:number,
-    emailid: string,
-    name: string,
-    title: string,
-    posttext: string,
-    timeofpost: string
-}
+import {thingsInArray} from './App';
 
 type props = {
     posttoshow: thingsInArray[] | undefined,
